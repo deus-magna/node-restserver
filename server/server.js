@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.use(require('./routes/usuario'));
-
+// Configuracion global de rutas.
+app.use(require('./routes/index'));
 
 // Tambien funciona esta codigo.  
 // mongoose.connect('mongodb://localhost:27017/cafe', {
